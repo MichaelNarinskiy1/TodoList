@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Todo List</h1>
+      </div>
+      <div class="todos_wrapper"></div>
+      <div class="time_date_clear">
+        <input type="time" class="todo_time" id="clr_time" />
+        <input type="date" class="todo_date" id="clr_date" />
+        <button onclick="clearBlank();" class="clear_btn">
+          <i class="fas fa-redo-alt"></i>
+        </button>
+      </div>
+      <div class="todos_inputs">
+        <input
+          type="text"
+          class="todo_input"
+          placeholder="Add a to-do "
+          id="clr_input"
+        />
+        <button class="add_btn">
+          <i class="far fa-plus-square fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    <script src="try.js"></script>
+  </body>
+</html>
